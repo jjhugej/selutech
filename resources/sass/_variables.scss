@@ -7,6 +7,18 @@ $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
 // Colors
+$white: #ffffff;
 $blue: #7ad9f5;
 $green: #6be493;
 $fontGrey100: #707070;
+
+//Bg colors
+$bgBlue: #7ad9f5;
+$bgGreenHover: #6be47f;
+
+//font weights
+$semiBold: 600;
+
+//box shadows
+$standardBoxShadow: 1px 1px 6px rgba(0, 0, 0, 16%);
+$splashBtnShadow: 2px 4px 10px rgba(0, 0, 0, 16%);

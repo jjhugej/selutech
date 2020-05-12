@@ -31,13 +31,47 @@
                         <h2>for small business</h2>
                     </div>
                     <div id="ctaRightDiv">
-                        
+                        <form action="#">
+                            <label for="name">Name:</label>
+                            <input name="name" type="text">
+                            <label for="email">Email:</label>
+                            <input name="email" type="email">
+                            <label for="phone">Phone:</label>
+                            <input name="phone" type="tel">
+                            <button type="submit">Let's Talk ></button>
+                        </form>
                     </div>
                 </div>
-            </section>
-
+            </section> 
         </div>
-
         
+        <img id="splashSvgStart" src="{{URL::asset('/images/splashSvgStart.svg')}}" alt="">
+
+        <section id="serviceSection">
+            <div class="container">
+                <div id="serviceWrapper">
+                    <div id="serviceBtnGroup">
+                        <div class="serviceCard">
+                            <h1>Design</h1>
+                        </div>     
+                        <div class="serviceCard">
+                            <h1>Develop</h1>
+                        </div>
+                        <div class="serviceCard">
+                            <h1>Deploy</h1>
+                        </div>
+                    </div>
+                    <div id="serviceDescription">
+                        <h2>Let us handle all of the setup</h2>
+                        <ul>
+                            <li>Domain registration and setup</li>
+                            <li>Server configuration and optimization</li>
+                            <li>Deployment and maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </body>
 </html>

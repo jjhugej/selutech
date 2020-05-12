@@ -1,0 +1,57 @@
+#serviceSection {
+    background-color: $bgBlue;
+    min-height: 100vh;
+    padding-top: 10%;
+    .container {
+        background-color: $bgBlue;
+        #serviceWrapper {
+            background-color: $bgBlue;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            #serviceBtnGroup {
+                background-color: $bgBlue;
+                .serviceCard {
+                    background-color: $green;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 40px 20px;
+                    margin: 20px 0;
+                    box-shadow: 2px 4px 8px rgba(0, 0, 0, 16%);
+                    border-radius: 10px;
+                    h1 {
+                        background-color: $green;
+                        color: $white;
+                        font-size: 34px;
+                        font-weight: $semiBold;
+                    }
+                }
+                .serviceCard:hover {
+                    background-color: $bgGreenHover;
+                    box-shadow: 1px 1px 20px rgba(0, 0, 0, 16%);
+                    h1 {
+                        background-color: $bgGreenHover;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            #serviceDescription {
+                background-color: $bgBlue;
+                h2 {
+                    background-color: $bgBlue;
+                    color: $white;
+                }
+                ul {
+                    background-color: $bgBlue;
+                    li {
+                        background-color: $bgBlue;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

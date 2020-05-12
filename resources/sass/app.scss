@@ -10,10 +10,18 @@
 //Splash
 @import "splash";
 
+//Servies
+@import "service";
+
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
 *,
 body {
     background-color: white;
+}
+#splashSvgStart {
+    z-index: 1;
+    margin-top: -4%;
+    width: 100%;
 }
