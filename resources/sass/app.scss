@@ -1,6 +1,9 @@
 // Fonts
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap");
 
+//reset
+@import "reset";
+
 // Variables
 @import "variables";
 
@@ -14,14 +17,11 @@
 @import "service";
 
 // Bootstrap
-@import "~bootstrap/scss/bootstrap";
+//@import "~bootstrap/scss/bootstrap";
 
-*,
 body {
-    background-color: white;
-}
-#splashSvgStart {
-    z-index: 1;
-    margin-top: -4%;
-    width: 100%;
+    font-family: $font-family-sans-serif;
+    padding: 0 10vw;
+    min-height: 200vh;
+    color: $fontGrey100;
 }
