@@ -158,7 +158,7 @@ nav #navWrapper #navLinks a {
     color: white;
     font-size: 30px;
     font-weight: bold;
-    z-index: 3;
+    z-index: 4;
   }
 
   nav #navWrapper #hamburger {
@@ -194,7 +194,7 @@ nav #navWrapper #navLinks a {
     height: 5px;
     border-radius: 5px;
     background-color: #ffffff;
-    z-index: 1;
+    z-index: 4;
     transform-origin: 2px 3px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
   }
@@ -209,21 +209,21 @@ nav #navWrapper #navLinks a {
 
   nav #navWrapper #hamburger input:checked ~ span {
     opacity: 1;
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
     background: #ffffff;
   }
 
-  nav #navWrapper #hamburger input:checked ~ span:nth-last-child(2) {
+  nav #navWrapper #hamburger input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
 
-  nav #navWrapper #hamburger input:checked ~ span:nth-last-child(1) {
-    transform: rotate(-45deg);
+  nav #navWrapper #hamburger input:checked ~ span:nth-last-child(4) {
+    transform: rotate(45deg) translate(-2px, 0px);
   }
 
-  nav #navWrapper #hamburger input:checked #navLinkWrapper {
-    transform: translate(-100%, 0) !important;
+  nav #navWrapper #hamburger input:checked ~ #navLinkWrapper {
+    transform: none !important;
   }
 
   nav #navWrapper #navLinkWrapper {
@@ -239,7 +239,8 @@ nav #navWrapper #navLinks a {
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
     transform-origin: 0% 0%;
-    transform: translate(0%, 0);
+    transform: translate(200%, -100%);
+    transition: 0.5s;
   }
 
   nav #navWrapper #navLinkWrapper #navLinks {
@@ -259,14 +260,21 @@ nav #navWrapper #navLinks a {
     margin: 7vh 0;
     font-size: 30px;
     font-weight: 500;
+    padding-bottom: 5px;
+    border-bottom: solid 2px #ffffff;
+    border-radius: 3px;
   }
 }
 
 @media (min-width: 1024px) {
   nav {
     padding: 5vh 0;
+  }
+
+  nav #navWrapper {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
   }
 
@@ -274,19 +282,25 @@ nav #navWrapper #navLinks a {
     font-size: 30px;
   }
 
-  nav #navWrapper #hamburder {
-    display: none;
-  }
-
-  nav #navWrapper #navLinks a {
+  nav #navWrapper #hamburger #navLinks a {
     margin-left: 30px;
     font-size: 28px;
   }
 
-  nav #navWrapper #navLinks a:hover {
+  nav #navWrapper #hamburger #navLinks a:hover {
     transition: 0.1s;
     border-bottom: solid 3px #7ad9f5;
   }
+
+  nav #navWrapper #hamburger input,
+  nav #navWrapper span {
+    display: none;
+  }
+}
+
+#splash {
+  min-height: 100vh;
+  background-color: #7ad9f5;
 }
 
 body {

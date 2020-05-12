@@ -15,22 +15,25 @@
                 <div id="logo">
                     <p>Selu Tech</p>
                 </div>
-                <div id="hamburger">
-                    <input id="menuToggle" type="checkbox">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div id="navLinkWrapper">
-                    <div id="navLinks">
-                        <a href="#">Services</a>
-                        <a href="#">Pricing</a>
-                        <a href="#">Contact</a>
+                    <div id="hamburger">
+                        <input id="menuToggle" type="checkbox">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div id="navLinkWrapper">
+                            <div id="navLinks">
+                                <a href="#">Services</a>
+                                <a href="#">Pricing</a>
+                                <a href="#">Contact</a>
+                            </div>
                     </div>
                 </div>
             </div>
-            
         </nav>
+        
+        <section id="splash">
+
+        </section>
         
 
     </body>
