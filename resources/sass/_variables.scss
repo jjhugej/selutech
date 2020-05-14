@@ -1,5 +1,8 @@
 //Media Breakpoints
-$breakpoint-phone: 375px;
+$breakpoint-xxs: 376px;
+$breakpoint-xxs-plus-1: 376px;
+$breakpoint-phone: 500px;
+$breakpoint-phone-plus-1: 501px;
 $breakpoint-tablet: 768px;
 $breakpoint-large-tablet-1: 1023px;
 $breakpoint-large-tablet: 1024px;
@@ -17,8 +20,14 @@ $line-height-base: 1.6;
 $white: #ffffff;
 $blue: #7ad9f5;
 $green: #6be493;
+$green75: #6be493;
+$fontLightGrey100: #8f8f8f;
 $fontGrey100: #707070;
+$fontDarkGrey75: #5a5a5acb;
+$fontDarkGrey100: #5a5a5a;
 
+//hovers
+$greenBtnHover: #6be493ef;
 //Bg colors
 $bgBlue: #7ad9f5;
 $bgGreenHover: #6be47f;
@@ -27,5 +36,5 @@ $bgGreenHover: #6be47f;
 $semiBold: 600;
 
 //box shadows
-$standardBoxShadow: 1px 1px 6px rgba(0, 0, 0, 16%);
-$splashBtnShadow: 2px 4px 10px rgba(0, 0, 0, 16%);
+$standardBoxShadow: 1px 2px 6px rgba(0, 0, 0, 0.233);
+$splashBtnShadow: 2px 3px 10px rgba(0, 0, 0, 0.233);

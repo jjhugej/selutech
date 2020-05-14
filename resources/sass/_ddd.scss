@@ -1,0 +1,223 @@
+//general properties
+#dddSection {
+    width: 100%;
+    background-color: $bgBlue;
+    padding: 0 0 20vh 0;
+    margin-bottom: -3px;
+    .container {
+        height: 100%;
+        #dddBtnGroup {
+            .dddBtn {
+                color: $white;
+                background-color: $green;
+                border-radius: 10px;
+                font-weight: 700;
+                box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.233);
+            }
+            .dddBtn:hover {
+                background-color: $greenBtnHover;
+                box-shadow: none;
+                box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.133);
+            }
+        }
+        #dddDescriptionContainer {
+            .dddDescription {
+                color: $white;
+                h1 {
+                }
+                ul {
+                    list-style: none;
+
+                    li {
+                        line-height: 4vh;
+                    }
+                    li:before {
+                        content: "\2713";
+                    }
+                }
+            }
+        }
+    }
+}
+//less than 376px
+@media (min-width: 250px) and (max-width: $breakpoint-xxs) {
+    #dddSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 !important;
+
+            #dddBtnGroup {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 10vh;
+                .dddBtn {
+                    margin: 0 3vw;
+                    padding: 25px 15px;
+                }
+            }
+            #dddDescriptionContainer {
+                .dddDescription {
+                    h1 {
+                        font-size: 24px;
+                        font-weight: 600;
+                        margin-bottom: 7vh;
+                        text-align: center;
+                    }
+                    ul {
+                        padding: 0 10vw;
+                        li {
+                            text-indent: 2vw;
+                            font-size: 22px;
+                            margin-bottom: 3.5vh;
+                        }
+                        li:before {
+                            margin-right: 2vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//extra small devices
+@media (min-width: $breakpoint-xxs-plus-1) and(max-width: $breakpoint-phone) {
+    #dddSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 !important;
+
+            #dddBtnGroup {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 10vh;
+                .dddBtn {
+                    margin: 0 3vw;
+                    padding: 30px 20px;
+                }
+            }
+            #dddDescriptionContainer {
+                .dddDescription {
+                    h1 {
+                        font-size: 24px;
+                        font-weight: 600;
+                        margin-bottom: 7vh;
+                        text-align: center;
+                    }
+                    ul {
+                        padding: 0 5vw;
+                        li {
+                            text-indent: 2vw;
+                            font-size: 22px;
+                            margin-bottom: 3.5vh;
+                        }
+                        li:before {
+                            margin-right: 2vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//small devices
+@media (min-width: $breakpoint-phone-plus-1) and (max-width: $breakpoint-large-tablet-1) {
+    #dddSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 !important;
+
+            #dddBtnGroup {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 10vh;
+                .dddBtn {
+                    margin: 0 3vw;
+                    padding: 50px 40px;
+                }
+            }
+            #dddDescriptionContainer {
+                .dddDescription {
+                    h1 {
+                        font-size: 24px;
+                        font-weight: 600;
+                        margin-bottom: 7vh;
+                        text-align: center;
+                    }
+                    ul {
+                        padding: 0 5 vw;
+                        li {
+                            font-size: 22px;
+                            margin-bottom: 3.5vh;
+                        }
+                        li:before {
+                            text-indent: 5vw;
+                            margin-right: 2vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//large devices
+@media (min-width: $breakpoint-large-tablet) {
+    #dddSection {
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            #dddBtnGroup {
+                display: flex;
+                flex-direction: column;
+                .dddBtn {
+                    margin-bottom: 4vh;
+                    padding: 40px 50px;
+                }
+            }
+            #dddDescriptionContainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                .dddDescription {
+                    h1 {
+                        font-weight: 600;
+                        font-size: 40px;
+                        margin-bottom: 40px;
+                    }
+                    ul {
+                        li {
+                            text-indent: 50px;
+                            font-size: 24px;
+                            margin-bottom: 20px;
+                        }
+                        li:before {
+                            margin-right: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

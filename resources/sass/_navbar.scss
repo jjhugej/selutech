@@ -1,7 +1,14 @@
 //standard settings
 nav {
+    z-index: 5;
     #navWrapper {
         #logo {
+        }
+        #hamburger {
+            z-index: 4;
+            span {
+                z-index: 10;
+            }
         }
         #navLinks {
             a {
@@ -134,9 +141,10 @@ nav {
 //large devices
 @media (min-width: $breakpoint-large-tablet) {
     nav {
-        padding: 5vh 0;
+        padding: 5vh;
 
         #navWrapper {
+            padding: 0 10vw;
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;

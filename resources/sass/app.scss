@@ -13,16 +13,26 @@
 //Splash
 @import "splash";
 
+//Design,Develop,Deploy
+@import "ddd";
+
 //Servies
 @import "service";
 
 // Bootstrap
-//@import "~bootstrap/scss/bootstrap";
-@import "~bootstrap/scss/grid";
+//@import "~bootstrap/scss/bootstrap"; -->for all of bootstrap
+/*
+// Required bootstrap plugins //https://getbootstrap.com/docs/4.0/getting-started/theming/
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+@import "node_modules/bootstrap/scss/grid"; // --> just for grid, must have required plugins
+*/
 
 body {
     font-family: $font-family-sans-serif;
-    padding: 0 10vw;
+
     min-height: 200vh;
     color: $fontGrey100;
 }

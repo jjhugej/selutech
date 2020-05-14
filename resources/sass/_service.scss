@@ -1,0 +1,119 @@
+//general
+#serviceSection {
+    min-height: 100vh;
+    .serviceContainer {
+        padding: 0 10vw;
+        h1 {
+            font-size: 40px;
+        }
+        h2 {
+            font-style: italic;
+        }
+        #servicesGroupWrapper {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+//small devices
+@media (max-width: $breakpoint-large-tablet-1) {
+    #serviceSection {
+        margin-top: -10vh;
+        .serviceContainer {
+            h1 {
+                text-align: center;
+                margin-bottom: 5vh;
+            }
+            h2 {
+                text-align: center;
+                margin-bottom: 5vh;
+            }
+            #servicesGroupWrapper {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                .serviceGroup {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10vh 0;
+                    border-bottom: solid 1px rgba(0, 0, 0, 0.15);
+                    i {
+                        font-size: 70px;
+                        padding-bottom: 20px;
+                        text-align: center;
+                    }
+                    i:nth-child(even) {
+                        order: -1;
+                    }
+
+                    .serviceText {
+                        h3 {
+                            color: $fontDarkGrey100;
+                            font-size: 30px;
+                            font-weight: 600;
+                            text-align: center;
+                            margin-bottom: 20px;
+                        }
+                        p {
+                            font-size: 20px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//large devices
+@media (min-width: $breakpoint-large-tablet) {
+    #serviceSection {
+        margin-top: -10vh;
+        .serviceContainer {
+            h1 {
+                font-size: 40px;
+                margin-bottom: 10vh;
+            }
+            h2 {
+                text-align: center;
+                font-size: 24px;
+            }
+            #servicesGroupWrapper {
+                display: flex;
+                flex-direction: column;
+                .serviceGroup {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: space-evenly;
+                    padding: 10vh 0;
+                    border-bottom: solid 1px rgba(0, 0, 0, 0.15);
+                    i {
+                        color: $green75;
+                        font-size: 250px;
+                    }
+
+                    .serviceText {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        h3 {
+                            color: $fontDarkGrey100;
+                            font-size: 40px;
+                            font-weight: 600;
+                            text-align: center;
+                        }
+                        p {
+                            line-height: 34px;
+                            font-size: 30px;
+                            font-weight: 400;
+                            text-align: center;
+                            color: $fontGrey100;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

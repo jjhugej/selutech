@@ -1,3 +1,157 @@
 #splash {
-    min-height: 100vh;
+    #ctaWrapper {
+        #ctaLeft {
+        }
+    }
+}
+//small devices(ipad tablet and down)
+@media (max-width: $breakpoint-large-tablet-1) {
+    .container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    #splash {
+        width: 100vw;
+        margin-bottom: 6vh;
+        #ctaWrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding-top: 20vh;
+            #ctaLeft {
+                text-align: left;
+                padding-top: 20px;
+                margin-bottom: 20px;
+                h2 {
+                    font-size: 50px;
+                    margin-bottom: 20px;
+                    font-weight: 400;
+                }
+                p {
+                    font-size: 33px;
+                    text-indent: 2vw;
+                    font-weight: 600;
+                }
+            }
+            #ctaRight {
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    label {
+                        font-size: 22px;
+                    }
+                    input {
+                        font-family: $font-family-sans-serif;
+                        margin-bottom: 10px;
+                        border-radius: 5px;
+                        border: solid 0.5px #707070;
+                        padding: 10px 10px;
+                        width: 250px;
+                        font-weight: 500;
+                        font-size: 18px;
+                    }
+                    #submitBtn {
+                        margin: 0 auto;
+                        background-color: $green;
+                        color: white;
+                        border: none;
+                        box-shadow: $splashBtnShadow;
+                    }
+                    #submitBtn:hover {
+                        background-color: $bgGreenHover;
+                        box-shadow: $standardBoxShadow;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//large devices
+@media (min-width: $breakpoint-large-tablet) {
+    #splash {
+        width: 100%;
+        #ctaWrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding-top: 20vh;
+            #ctaLeft {
+                padding-top: 20px;
+                h2 {
+                    font-size: 70px;
+                    margin-bottom: 20px;
+                    font-weight: 400;
+                }
+                p {
+                    font-size: 50px;
+                    text-indent: 5vw;
+                    font-weight: 600;
+                }
+            }
+            #ctaRight {
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    label {
+                        font-size: 22px;
+                    }
+                    input {
+                        font-family: $font-family-sans-serif;
+                        margin-bottom: 10px;
+                        border-radius: 5px;
+                        border: solid 0.5px #707070;
+                        padding: 10px 10px;
+                        width: 250px;
+                        font-weight: 500;
+                        font-size: 18px;
+                    }
+                    #submitBtn {
+                        margin: 0 auto;
+                        background-color: $green;
+                        color: white;
+                        border: none;
+                        box-shadow: $splashBtnShadow;
+                    }
+                    #submitBtn:hover {
+                        background-color: $bgGreenHover;
+                        box-shadow: $standardBoxShadow;
+                    }
+                }
+            }
+        }
+    }
+    #svgWrapTop {
+        overflow: hidden;
+        margin-bottom: -20px;
+        #splashSvgStart {
+            width: 120%;
+        }
+    }
+    #svgWrapBottom {
+        overflow: hidden;
+
+        #splashSvgEnd {
+            transform: scale(-1, -1);
+            width: 120%;
+        }
+    }
+}
+#svgWrapTop {
+    overflow: hidden;
+    margin-bottom: -20px;
+    #splashSvgStart {
+    }
+}
+#svgWrapBottom {
+    overflow: hidden;
+
+    #splashSvgEnd {
+        transform: scale(-1, -1);
+    }
 }
