@@ -1,5 +1,6 @@
 $(document).ready(function() {
     console.log("ready!");
+
     var docWidth = document.documentElement.offsetWidth;
 
     [].forEach.call(document.querySelectorAll("*"), function(el) {

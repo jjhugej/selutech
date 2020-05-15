@@ -133,6 +133,48 @@ table {
   border-spacing: 0;
 }
 
+section {
+  min-height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section #hero {
+  height: 100%;
+  width: 100%;
+  padding: 10vh 10vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+section #hero #brand {
+  line-height: 60px;
+}
+
+section #hero #brand h1 {
+  font-size: 65px;
+  text-align: center;
+}
+
+section #hero #brand h2 {
+  font-size: 35px;
+  text-align: center;
+}
+
+section #hero #dynamicTextWrapper {
+  line-height: 60px;
+}
+
+section #hero #dynamicTextWrapper p {
+  font-size: 45px;
+  text-align: center;
+}
+
 nav {
   z-index: 5;
 }
@@ -807,7 +849,7 @@ nav #navWrapper #navLinks a {
   }
 
   #serviceSection .serviceContainer #servicesGroupWrapper .serviceGroup i {
-    color: #6be493;
+    color: #6be493b0;
     font-size: 250px;
   }
 

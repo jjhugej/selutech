@@ -8,6 +8,7 @@
 
         <script src="https://kit.fontawesome.com/888059e617.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="{{ url('css/app.css') }}" />
+        
     </head>
     <body>
 
@@ -31,6 +32,17 @@
                 </div>
             </div>
         </nav>
+        <section>
+            <div id="hero">
+                <div id="brand">
+                    <h1>LillyPad</h1>
+                    <h2>Web Development</h2>
+                </div>
+                <div id="dynamicTextWrapper">
+                    <p id="js_target_one">Websites</p>
+                </div>
+            </div>
+        </section>
         
         <div id="svgWrapTop">
             <img id="splashSvgStart" src="{{URL::asset('/images/splashSvgStart.svg')}}" alt="">
@@ -119,7 +131,11 @@
         </div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="{{ asset('/js/testing.js') }}"></script>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="{{ asset('/js/app.js') }}"></script>
+        <script src="{{ asset('/js/type.js') }}"></script>
+        <script src="{{ asset('/js/testing.js') }}"></script>
+    
     </body>
 </html>
