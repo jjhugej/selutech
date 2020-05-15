@@ -1,6 +1,7 @@
 #splash {
     background-color: $bgBlue;
     color: $white;
+
     #ctaWrapper {
         #ctaLeft {
             h2 {
@@ -12,6 +13,7 @@
             form {
                 label {
                     margin-bottom: 5px;
+                    color: rgba(255, 255, 255, 0.85);
                 }
                 input {
                     border: solid 1px white;
@@ -33,7 +35,7 @@
         margin: 0;
     }
     #splash {
-        padding-bottom: 6vh;
+        padding-bottom: 25vh;
         #ctaWrapper {
             display: flex;
             flex-wrap: wrap;
@@ -98,7 +100,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-            padding-top: 20vh;
+            padding: 45vh 0 40vh 0;
             #ctaLeft {
                 padding-top: 20px;
                 h2 {

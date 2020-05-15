@@ -1,0 +1,22 @@
+footer {
+    background-color: $white;
+    color: $fontDarkGrey100;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+    #footerWrapper {
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10vh 0;
+        #footerBrand {
+            margin-bottom: 1vh;
+            h4 {
+            }
+        }
+        p {
+            margin-bottom: 1vh;
+        }
+    }
+}

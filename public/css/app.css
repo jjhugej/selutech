@@ -165,6 +165,7 @@ table {
 #heroSection #hero #brand h2 {
   font-size: 35px;
   text-align: center;
+  white-space: nowrap;
 }
 
 #heroSection #hero #dynamicTextWrapper p {
@@ -371,7 +372,7 @@ nav #navWrapper #navLinks a {
   }
 
   nav #navWrapper {
-    padding: 0 10vw;
+    padding: 0 2vw;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -405,6 +406,7 @@ nav #navWrapper #navLinks a {
 
 #splash #ctaWrapper #ctaRight form label {
   margin-bottom: 5px;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 #splash #ctaWrapper #ctaRight form input {
@@ -419,7 +421,7 @@ nav #navWrapper #navLinks a {
   }
 
   #splash {
-    padding-bottom: 6vh;
+    padding-bottom: 25vh;
   }
 
   #splash #ctaWrapper {
@@ -490,7 +492,7 @@ nav #navWrapper #navLinks a {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-top: 20vh;
+    padding: 45vh 0 40vh 0;
   }
 
   #splash #ctaWrapper #ctaLeft {
@@ -928,6 +930,29 @@ nav #navWrapper #navLinks a {
     text-align: center;
     color: #707070;
   }
+}
+
+footer {
+  background-color: #ffffff;
+  color: #5a5a5a;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+footer #footerWrapper {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10vh 0;
+}
+
+footer #footerWrapper #footerBrand {
+  margin-bottom: 1vh;
+}
+
+footer #footerWrapper p {
+  margin-bottom: 1vh;
 }
 
 /*
