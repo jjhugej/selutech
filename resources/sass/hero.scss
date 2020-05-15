@@ -1,4 +1,6 @@
-section {
+//general properties
+#heroSection {
+    overflow-x: hidden;
     min-height: 60vh;
     width: 100%;
     display: flex;
@@ -10,14 +12,15 @@ section {
         padding: 10vh 10vw;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         align-items: center;
         #brand {
-            line-height: 60px;
+            flex-basis: 40%;
+
             h1 {
                 font-size: 65px;
                 text-align: center;
+                margin-bottom: 1vh;
             }
             h2 {
                 font-size: 35px;
@@ -25,10 +28,77 @@ section {
             }
         }
         #dynamicTextWrapper {
-            line-height: 60px;
             p {
-                font-size: 45px;
+                font-size: 40px;
                 text-align: center;
+                display: inline;
+            }
+        }
+    }
+}
+
+//xs devices
+@media (max-width: $breakpoint-xxs) {
+    #heroSection {
+        #hero {
+            #brand {
+                h1 {
+                    font-size: 55px;
+                }
+                h2 {
+                    font-size: 25px;
+                }
+            }
+            #dynamicTextWrapper {
+                p {
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+}
+
+//small devices(ipad tablet and down)
+@media (max-width: $breakpoint-large-tablet-1) {
+    #heroSection {
+        margin-top: 20vh;
+        #hero {
+            flex-direction: column;
+            flex-wrap: wrap;
+            #brand {
+                padding-bottom: 10vh;
+                margin: 0;
+                flex-basis: auto;
+                h1 {
+                }
+                h2 {
+                    white-space: nowrap;
+                }
+            }
+            #dynamicTextWrapper {
+                p {
+                    text-align: center;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
+
+//large devices
+@media (min-width: $breakpoint-large-tablet) {
+    #heroSection {
+        #hero {
+            #brand {
+                margin-right: 15vw;
+                h1 {
+                }
+                h2 {
+                }
+            }
+            #dynamicTextWrapper {
+                p {
+                }
             }
         }
     }

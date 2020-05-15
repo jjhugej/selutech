@@ -32,14 +32,14 @@
                 </div>
             </div>
         </nav>
-        <section>
+        <section id="heroSection">
             <div id="hero">
                 <div id="brand">
                     <h1>LillyPad</h1>
                     <h2>Web Development</h2>
                 </div>
                 <div id="dynamicTextWrapper">
-                    <p id="js_target_one">Websites</p>
+                    <p id="js_target_one"></p>
                 </div>
             </div>
         </section>
@@ -87,7 +87,7 @@
                     <div class="serviceGroup">
                         <div class="serviceText">
                             <h3>Web App Development</h3>
-                            <p>Need more than a static website? Our specialty is creating custom web applications for small businesses.</p>
+                            <p>Need more than a static website? Our specialty is creating custom web applications.</p>
                         </div>
                         <i class="fas fa-code"></i>
                     </div>
@@ -95,7 +95,7 @@
                         <i class="fas fa-chart-line"></i>
                         <div class="serviceText">
                             <h3>S.E.O.</h3>
-                            <p>Ads are great, top search results are better. Organically move up the ranks for all major search engines.</p>
+                            <p>Ads are great, top search results are better. We can help you organically move up the ranks for all major search engines.</p>
                         </div>
                     </div>
                     <div class="serviceGroup">
@@ -118,11 +118,11 @@
                     <div id="ctaRight">
                         <form action="#">
                                 <label for="name">Name:</label>
-                                <input name="name" type="text">
+                                <input name="name" type="text" required>
                                 <label for="email">Email:</label>
-                                <input name="email" type="email">
+                                <input name="email" type="email" required>
                                 <label for="phone">Phone:</label>
-                                <input name="phone" type="tel">
+                                <input name="phone" type="tel" required>
                                 <input id="submitBtn" type="submit" value="Let's Talk >">
                             </form>
                     </div>
@@ -134,7 +134,7 @@
     
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="{{ asset('/js/app.js') }}"></script>
-        <script src="{{ asset('/js/type.js') }}"></script>
+        <script type="module" src="{{ asset('/js/type/src/type.js') }}"></script>
         <script src="{{ asset('/js/testing.js') }}"></script>
     
     </body>

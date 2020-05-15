@@ -17,7 +17,4 @@ mix.js("resources/js/app.js", "public/js").sass(
 );
 
 //custom stuff here
-mix.scripts(
-    ["public/js/admin.js", "public/js/dashboard.js"],
-    "public/js/all.js"
-);
+mix.scripts(["node_modules/typed.js/src/typed.js"], "public/js/app.js");

@@ -1,10 +1,31 @@
 #splash {
+    background-color: $bgBlue;
+    color: $white;
     #ctaWrapper {
         #ctaLeft {
+            h2 {
+            }
+            p {
+            }
+        }
+        #ctaRight {
+            form {
+                label {
+                    margin-bottom: 5px;
+                }
+                input {
+                    border: solid 1px white;
+                }
+                #submitBtn {
+                }
+                #submitBtn:hover {
+                }
+            }
         }
     }
 }
-//small devices(ipad tablet and down)
+
+//med-small devices(ipad tablet and down)
 @media (max-width: $breakpoint-large-tablet-1) {
     .container {
         width: 100%;
@@ -12,8 +33,7 @@
         margin: 0;
     }
     #splash {
-        width: 100vw;
-        margin-bottom: 6vh;
+        padding-bottom: 6vh;
         #ctaWrapper {
             display: flex;
             flex-wrap: wrap;
@@ -21,8 +41,8 @@
             padding-top: 20vh;
             #ctaLeft {
                 text-align: left;
-                padding-top: 20px;
-                margin-bottom: 20px;
+                padding-top: 30px;
+                margin-bottom: 7vh;
                 h2 {
                     font-size: 50px;
                     margin-bottom: 20px;
@@ -47,7 +67,7 @@
                         font-family: $font-family-sans-serif;
                         margin-bottom: 10px;
                         border-radius: 5px;
-                        border: solid 0.5px #707070;
+
                         padding: 10px 10px;
                         width: 250px;
                         font-weight: 500;
@@ -105,7 +125,7 @@
                         font-family: $font-family-sans-serif;
                         margin-bottom: 10px;
                         border-radius: 5px;
-                        border: solid 0.5px #707070;
+
                         padding: 10px 10px;
                         width: 250px;
                         font-weight: 500;

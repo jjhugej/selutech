@@ -133,7 +133,8 @@ table {
   border-spacing: 0;
 }
 
-section {
+#heroSection {
+  overflow-x: hidden;
   min-height: 60vh;
   width: 100%;
   display: flex;
@@ -141,38 +142,81 @@ section {
   align-items: center;
 }
 
-section #hero {
+#heroSection #hero {
   height: 100%;
   width: 100%;
   padding: 10vh 10vw;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
 }
 
-section #hero #brand {
-  line-height: 60px;
+#heroSection #hero #brand {
+  flex-basis: 40%;
 }
 
-section #hero #brand h1 {
+#heroSection #hero #brand h1 {
   font-size: 65px;
   text-align: center;
+  margin-bottom: 1vh;
 }
 
-section #hero #brand h2 {
+#heroSection #hero #brand h2 {
   font-size: 35px;
   text-align: center;
 }
 
-section #hero #dynamicTextWrapper {
-  line-height: 60px;
+#heroSection #hero #dynamicTextWrapper p {
+  font-size: 40px;
+  text-align: center;
+  display: inline;
 }
 
-section #hero #dynamicTextWrapper p {
-  font-size: 45px;
-  text-align: center;
+@media (max-width: 376px) {
+  #heroSection #hero #brand h1 {
+    font-size: 55px;
+  }
+
+  #heroSection #hero #brand h2 {
+    font-size: 25px;
+  }
+
+  #heroSection #hero #dynamicTextWrapper p {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 1023px) {
+  #heroSection {
+    margin-top: 20vh;
+  }
+
+  #heroSection #hero {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #heroSection #hero #brand {
+    padding-bottom: 10vh;
+    margin: 0;
+    flex-basis: auto;
+  }
+
+  #heroSection #hero #brand h2 {
+    white-space: nowrap;
+  }
+
+  #heroSection #hero #dynamicTextWrapper p {
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 1024px) {
+  #heroSection #hero #brand {
+    margin-right: 15vw;
+  }
 }
 
 nav {
@@ -354,6 +398,19 @@ nav #navWrapper #navLinks a {
   }
 }
 
+#splash {
+  background-color: #7ad9f5;
+  color: #ffffff;
+}
+
+#splash #ctaWrapper #ctaRight form label {
+  margin-bottom: 5px;
+}
+
+#splash #ctaWrapper #ctaRight form input {
+  border: solid 1px white;
+}
+
 @media (max-width: 1023px) {
   .container {
     width: 100%;
@@ -362,8 +419,7 @@ nav #navWrapper #navLinks a {
   }
 
   #splash {
-    width: 100vw;
-    margin-bottom: 6vh;
+    padding-bottom: 6vh;
   }
 
   #splash #ctaWrapper {
@@ -375,8 +431,8 @@ nav #navWrapper #navLinks a {
 
   #splash #ctaWrapper #ctaLeft {
     text-align: left;
-    padding-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 30px;
+    margin-bottom: 7vh;
   }
 
   #splash #ctaWrapper #ctaLeft h2 {
@@ -405,7 +461,6 @@ nav #navWrapper #navLinks a {
     font-family: "Montserrat", sans-serif;
     margin-bottom: 10px;
     border-radius: 5px;
-    border: solid 0.5px #707070;
     padding: 10px 10px;
     width: 250px;
     font-weight: 500;
@@ -468,7 +523,6 @@ nav #navWrapper #navLinks a {
     font-family: "Montserrat", sans-serif;
     margin-bottom: 10px;
     border-radius: 5px;
-    border: solid 0.5px #707070;
     padding: 10px 10px;
     width: 250px;
     font-weight: 500;
@@ -583,8 +637,8 @@ nav #navWrapper #navLinks a {
   }
 
   #dddSection .container #dddBtnGroup .dddBtn {
-    margin: 0 3vw;
-    padding: 25px 15px;
+    margin: 0 2vw;
+    padding: 25px 14px;
   }
 
   #dddSection .container #dddDescriptionContainer .dddDescription h1 {
@@ -631,8 +685,8 @@ nav #navWrapper #navLinks a {
   }
 
   #dddSection .container #dddBtnGroup .dddBtn {
-    margin: 0 3vw;
-    padding: 30px 20px;
+    margin: 0 2vw;
+    padding: 25px 10px;
   }
 
   #dddSection .container #dddDescriptionContainer .dddDescription h1 {
@@ -799,6 +853,7 @@ nav #navWrapper #navLinks a {
     font-size: 70px;
     padding-bottom: 20px;
     text-align: center;
+    color: #6be493;
   }
 
   #serviceSection .serviceContainer #servicesGroupWrapper .serviceGroup i:nth-child(even) {
