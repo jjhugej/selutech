@@ -15,7 +15,7 @@
         <nav id="nav">
             <div id="navWrapper">
                 <div id="logo">
-                    <p>LillyPad</p>
+                    <p><a href="#">LillyPad</a></p>
                 </div>
                     <div id="hamburger">
                         <input id="menuToggle" type="checkbox">
@@ -24,9 +24,8 @@
                         <span></span>
                         <div id="navLinkWrapper">
                             <div id="navLinks">
-                                <a href="#">Services</a>
-                                <a href="#">Pricing</a>
-                                <a href="#">Contact</a>
+                                <a href="#services">Services</a>
+                                <a href="#contact">Contact</a>
                             </div>
                     </div>
                 </div>
@@ -45,35 +44,53 @@
         </section>
         
         <div id="svgWrapTop">
-            <img id="splashSvgStart" src="{{URL::asset('/images/splashSvgStart.svg')}}" alt="">
+            <img id="splashSvgStart" src="{{URL::asset('/images/splashSvgStart.svg')}}" alt="bluewave">
         </div>
         
         <section id="dddSection">
             <div class="container">
                 <div id="dddBtnGroup">
-                    <h1 class="dddBtn">Design</h1>
-                    <h1 class="dddBtn">Develop</h1>
-                    <h1 class="dddBtn">Deploy</h1>
+                    <button id="designBtn" class="dddBtn" autofocus>Design</button>
+                    <button id="developBtn" class="dddBtn">Develop</button>
+                    <button id="deployBtn" class="dddBtn">Deploy</button>
                 </div>
                 <div id="dddDescriptionContainer">
-                    <div class="dddDescription">
+                    <div id="designDesc" class="dddDescription">
+                        <h1>Designed with the user in mind</h1>
+                        <ul>
+                            <li>Responsive web sites that fit any device</li>
+                            <li>Sleek and intuitive user interfaces</li>
+                            <li>Completely custom designs with your brand in mind</li>
+                        </ul>
+                    </div>
+                     {{--
+                    <div id="developDesc" class="dddDescription d-none">
+                        <h1>Custom built code</h1>
+                        <ul>
+                            <li>Fast as lightning</li>
+                            <li>Minimize bloat and dependencies with custom code</li>
+                            <li>Automated web tools for your business</li>
+                        </ul>
+                    </div>
+                    <div id="deployDesc" class="dddDescription d-none">
                         <h1>Let us handle all of the setup</h1>
                         <ul>
                             <li>Domain registration</li>
                             <li>Server configuration and optimization</li>
                             <li>Deployment and maintenance</li>
                         </ul>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </section>
 
         <div id="svgWrapBottom">
-            <img id="splashSvgEnd" src="{{URL::asset('/images/splashSvgStart.svg')}}" alt="">
+            <img id="splashSvgEnd" src="{{URL::asset('/images/splashSvgStart.svg')}}" alt="bluewave">
         </div>
 
+
         <section id="serviceSection">
-            <div class="serviceContainer">
+            <div id="services" class="serviceContainer">
                 <h1>Services</h1>
                 <h2>We offer a robust array of services to suit your needs</h2>
                 <div id="servicesGroupWrapper">
@@ -108,23 +125,35 @@
                 </div>
             </div>
         </section>
-        <div class="container">
+        <div id="contact" class="container">
+            <a name="contact" href="#"></a>
             <section id="splash">
                 <div id="ctaWrapper">
                     <div id="ctaLeft">
                         <h2>Big websites</h2>
                         <p>for small business</p>
                     </div>
+                   
                     <div id="ctaRight">
-                        <form action="#">
-                                <label for="name">Name:</label>
-                                <input name="name" type="text" required>
-                                <label for="email">Email:</label>
-                                <input name="email" type="email" required>
-                                <label for="phone">Phone:</label>
-                                <input name="phone" type="tel" required>
-                                <input id="submitBtn" type="submit" value="Let's Talk >">
-                            </form>
+
+                    
+
+                        
+                    <form id="ctaForm" action="http://selutech.test/contact" method="POST">
+                        @csrf
+                            <label for="name">Name:</label>
+                            <div id="formName" class="errors"></div>
+                            <input name="name" type="text">
+                            <label for="email">Email:</label>
+                            <div id="formEmail" class="errors"></div>
+                            <input name="email" type="email">
+                            <label for="phone_number">Phone:</label>
+                            <div id="form_phone_number" class="errors"></div>
+                            <input name="phone_number" type="tel">
+                            
+                            <div id="success"></div>
+                            <input id="submitBtn" type="submit" value="Let's Talk >">
+                        </form>
                     </div>
                 </div>
             </section>
@@ -147,6 +176,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="{{ asset('/js/app.js') }}"></script>
         <script type="module" src="{{ asset('/js/type/src/type.js') }}"></script>
+        <script src="{{ asset('/js/ddd.js') }}"></script>
+        <script src="{{ asset('/js/cta.js') }}"></script>
         <script src="{{ asset('/js/testing.js') }}"></script>
     
     </body>

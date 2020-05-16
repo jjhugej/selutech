@@ -19,7 +19,7 @@
 //small devices
 @media (max-width: $breakpoint-large-tablet-1) {
     #serviceSection {
-        margin-top: -10vh;
+        margin-top: -5vh;
         .serviceContainer {
             h1 {
                 text-align: center;
@@ -70,7 +70,7 @@
 //large devices
 @media (min-width: $breakpoint-large-tablet) {
     #serviceSection {
-        margin-top: -10vh;
+        margin-top: -5vh;
         .serviceContainer {
             h1 {
                 font-size: 40px;

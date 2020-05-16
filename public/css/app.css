@@ -399,12 +399,31 @@ nav #navWrapper #navLinks a {
   }
 }
 
+.errorBorder {
+  border: solid 1px red;
+}
+
 #splash {
   background-color: #7ad9f5;
   color: #ffffff;
 }
 
+#splash #ctaWrapper #ctaRight form {
+  color: white;
+}
+
+#splash #ctaWrapper #ctaRight form #success {
+  color: white !important;
+}
+
+#splash #ctaWrapper #ctaRight form .errors .errorMsg {
+  font-size: 14px;
+  display: block;
+  color: red;
+}
+
 #splash #ctaWrapper #ctaRight form label {
+  margin-top: 20px;
   margin-bottom: 5px;
   color: rgba(255, 255, 255, 0.85);
 }
@@ -470,7 +489,6 @@ nav #navWrapper #navLinks a {
   }
 
   #splash #ctaWrapper #ctaRight form #submitBtn {
-    margin: 0 auto;
     background-color: #6be493;
     color: white;
     border: none;
@@ -480,6 +498,11 @@ nav #navWrapper #navLinks a {
   #splash #ctaWrapper #ctaRight form #submitBtn:hover {
     background-color: #6be47f;
     box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.233);
+  }
+
+  #splash #ctaWrapper #ctaRight form #success {
+    padding: 10px 10px;
+    width: 250px;
   }
 }
 
@@ -532,7 +555,6 @@ nav #navWrapper #navLinks a {
   }
 
   #splash #ctaWrapper #ctaRight form #submitBtn {
-    margin: 0 auto;
     background-color: #6be493;
     color: white;
     border: none;
@@ -542,6 +564,12 @@ nav #navWrapper #navLinks a {
   #splash #ctaWrapper #ctaRight form #submitBtn:hover {
     background-color: #6be47f;
     box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.233);
+  }
+
+  #splash #ctaWrapper #ctaRight form #success {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    width: 250px;
   }
 
   #svgWrapTop {
@@ -590,6 +618,7 @@ nav #navWrapper #navLinks a {
 #dddSection .container #dddBtnGroup .dddBtn {
   color: #ffffff;
   background-color: #6be493;
+  border: solid 1px #6be493;
   border-radius: 10px;
   font-weight: 700;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.233);
@@ -597,8 +626,14 @@ nav #navWrapper #navLinks a {
 
 #dddSection .container #dddBtnGroup .dddBtn:hover {
   background-color: #6be493ef;
-  box-shadow: none;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.133);
+}
+
+#dddSection .container #dddBtnGroup .dddBtn:focus {
+  background-color: #6be493ef;
+  box-shadow: none;
+  border: solid 2px rgba(128, 128, 128, 0.267);
+  text-decoration: underline;
 }
 
 #dddSection .container #dddDescriptionContainer .dddDescription {
@@ -639,8 +674,9 @@ nav #navWrapper #navLinks a {
   }
 
   #dddSection .container #dddBtnGroup .dddBtn {
+    font-size: 22px;
     margin: 0 2vw;
-    padding: 25px 14px;
+    padding: 30px 6px;
   }
 
   #dddSection .container #dddDescriptionContainer .dddDescription h1 {
@@ -687,8 +723,9 @@ nav #navWrapper #navLinks a {
   }
 
   #dddSection .container #dddBtnGroup .dddBtn {
+    font-size: 22px;
     margin: 0 2vw;
-    padding: 25px 10px;
+    padding: 25px 15px;
   }
 
   #dddSection .container #dddDescriptionContainer .dddDescription h1 {
@@ -699,7 +736,7 @@ nav #navWrapper #navLinks a {
   }
 
   #dddSection .container #dddDescriptionContainer .dddDescription ul {
-    padding: 0 5vw;
+    padding: 0 10vw 0 15vw;
   }
 
   #dddSection .container #dddDescriptionContainer .dddDescription ul li {
@@ -735,8 +772,9 @@ nav #navWrapper #navLinks a {
   }
 
   #dddSection .container #dddBtnGroup .dddBtn {
+    font-size: 22px;
     margin: 0 3vw;
-    padding: 50px 40px;
+    padding: 46px 32px;
   }
 
   #dddSection .container #dddDescriptionContainer .dddDescription h1 {
@@ -776,6 +814,8 @@ nav #navWrapper #navLinks a {
 
   #dddSection .container #dddBtnGroup .dddBtn {
     margin-bottom: 4vh;
+    font-size: 30px;
+    font-weight: 600;
     padding: 40px 50px;
   }
 
@@ -783,6 +823,7 @@ nav #navWrapper #navLinks a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    flex-basis: 60%;
   }
 
   #dddSection .container #dddDescriptionContainer .dddDescription h1 {
@@ -792,13 +833,13 @@ nav #navWrapper #navLinks a {
   }
 
   #dddSection .container #dddDescriptionContainer .dddDescription ul li {
-    text-indent: 50px;
+    text-indent: 25px;
     font-size: 24px;
     margin-bottom: 20px;
   }
 
   #dddSection .container #dddDescriptionContainer .dddDescription ul li:before {
-    margin-right: 25px;
+    margin-right: 20px;
   }
 }
 
@@ -825,7 +866,7 @@ nav #navWrapper #navLinks a {
 
 @media (max-width: 1023px) {
   #serviceSection {
-    margin-top: -10vh;
+    margin-top: -5vh;
   }
 
   #serviceSection .serviceContainer h1 {
@@ -878,7 +919,7 @@ nav #navWrapper #navLinks a {
 
 @media (min-width: 1024px) {
   #serviceSection {
-    margin-top: -10vh;
+    margin-top: -5vh;
   }
 
   #serviceSection .serviceContainer h1 {
@@ -968,5 +1009,21 @@ body {
   font-family: "Montserrat", sans-serif;
   min-height: 200vh;
   color: #707070;
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-none {
+  display: none;
+}
+
+.dddActive {
+  text-decoration: underline;
+}
+
+button:focus {
+  outline: 0;
 }
 

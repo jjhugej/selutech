@@ -1,3 +1,6 @@
+.errorBorder {
+    border: solid 1px red;
+}
 #splash {
     background-color: $bgBlue;
     color: $white;
@@ -11,7 +14,21 @@
         }
         #ctaRight {
             form {
+                color: white;
+                #success {
+                    color: white !important;
+                }
+                .errors {
+                    .errorMsg {
+                        font-size: 14px;
+                        display: block;
+
+                        color: red;
+                    }
+                }
+
                 label {
+                    margin-top: 20px;
                     margin-bottom: 5px;
                     color: rgba(255, 255, 255, 0.85);
                 }
@@ -76,7 +93,6 @@
                         font-size: 18px;
                     }
                     #submitBtn {
-                        margin: 0 auto;
                         background-color: $green;
                         color: white;
                         border: none;
@@ -85,6 +101,10 @@
                     #submitBtn:hover {
                         background-color: $bgGreenHover;
                         box-shadow: $standardBoxShadow;
+                    }
+                    #success {
+                        padding: 10px 10px;
+                        width: 250px;
                     }
                 }
             }
@@ -127,14 +147,12 @@
                         font-family: $font-family-sans-serif;
                         margin-bottom: 10px;
                         border-radius: 5px;
-
                         padding: 10px 10px;
                         width: 250px;
                         font-weight: 500;
                         font-size: 18px;
                     }
                     #submitBtn {
-                        margin: 0 auto;
                         background-color: $green;
                         color: white;
                         border: none;
@@ -143,6 +161,11 @@
                     #submitBtn:hover {
                         background-color: $bgGreenHover;
                         box-shadow: $standardBoxShadow;
+                    }
+                    #success {
+                        padding: 10px 10px;
+                        margin-bottom: 10px;
+                        width: 250px;
                     }
                 }
             }
