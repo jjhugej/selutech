@@ -18,7 +18,7 @@
         <nav id="nav">
             <div id="navWrapper">
                 <div id="logo">
-                    <a href="/"><img src="{{URL::asset('/images/svg/nav_logo_less_bold.svg')}}"></a>
+                    <a href="/"><img src="{{URL::asset('/images/nav_logo_less_bold.svg')}}"></a>
                 </div>
                     <div id="hamburger">
                         <input id="menuToggle" type="checkbox">
@@ -170,7 +170,7 @@
                 <br>
                 <p>(828)788-5961 </p>
                 <br>
-                <p> sales@lillypadwebdev.com </p>               
+                <p> support@lillypadwebdev.com </p>               
             </div>
         </footer>
 
