@@ -3,6 +3,11 @@ nav {
     z-index: 5;
     #navWrapper {
         #logo {
+            a {
+                img {
+                    width: 200px;
+                }
+            }
         }
         #hamburger {
             z-index: 4;
@@ -12,7 +17,8 @@ nav {
         }
         #navLinks {
             a {
-                color: $fontGrey100;
+                color: black;
+                font-weight: 500;
                 text-decoration: none;
             }
         }
@@ -36,7 +42,11 @@ nav {
                 color: white;
                 font-size: 30px;
                 font-weight: bold;
-                z-index: 4;
+                z-index: -1;
+                a {
+                    img {
+                    }
+                }
             }
 
             #hamburger {
@@ -141,7 +151,7 @@ nav {
 //large devices
 @media (min-width: $breakpoint-large-tablet) {
     nav {
-        padding: 5vh;
+        padding: 3vh 0;
 
         #navWrapper {
             padding: 0 2vw;
@@ -149,14 +159,14 @@ nav {
             flex-direction: row;
             flex-wrap: nowrap;
             justify-content: space-between;
+            align-items: center;
             #logo {
-                font-size: 30px;
             }
             #hamburger {
                 #navLinks {
                     a {
                         margin-left: 30px;
-                        font-size: 28px;
+                        font-size: 24px;
                     }
                     a:hover {
                         transition: 0.1s;

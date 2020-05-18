@@ -4,7 +4,7 @@ $(document).ready(function() {
         $("#dddDescriptionContainer")
             .empty()
             .append(
-                '<div id="designDesc" class="dddDescription"><h1>Designed with the user in mind</h1><ul><li>Responsive web sites that fit any device</li><li>Sleek and intuitive user interfaces</li><li>Completely custom designs with your brand in mind</li></ul></div>'
+                '<div id="designDesc" class="dddDescription"><h1>Designed with the user in mind</h1><ul><li>Responsive web sites that fit any device</li><li>Sleek and intuitive user interfaces</li><li>Completely custom designs to fit your brand</li></ul></div>'
             );
     });
 
@@ -13,7 +13,7 @@ $(document).ready(function() {
         $("#dddDescriptionContainer")
             .empty()
             .append(
-                '<div id="developDesc" class="dddDescription"><h1>Custom built code</h1><ul><li>Fast as lightning</li><li>Minimize bloat and dependencies with custom code</li><li>Automated web tools for your business</li></ul> </div>'
+                '<div id="developDesc" class="dddDescription"><h1>Custom built code</h1><ul><li>Fast as lightning</li><li>Minimize bloat and dependencies</li><li>Automated web tools</li></ul> </div>'
             );
     });
 

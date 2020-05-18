@@ -35,17 +35,19 @@ class ContactFormController extends Controller
      */
     public function store(Request $request)
     {
+        //dd($request->phone_number);
         //dd($request);
         $validatedData = $request->validate([
             'name' => 'required|max:255',
             'email' => 'required|email|max:255',
-            'phone_number' => 'required|integer'
+            'phone_number' => 'required|min:10'
             ]);
+          
             ContactForm::create($validatedData);
             
             $data = [
                 'success' => true,
-                'message'=> 'Sucess! We look forward to speaking with you.'
+                'message'=> 'Success! We look forward to speaking with you.'
             ];
 
 return response()->json($data);

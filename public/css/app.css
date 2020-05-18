@@ -145,18 +145,15 @@ table {
 #heroSection #hero {
   height: 100%;
   width: 100%;
-  padding: 10vh 10vw;
+  margin: 10vh 10vw;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 
-#heroSection #hero #brand {
-  flex-basis: 40%;
-}
-
 #heroSection #hero #brand h1 {
+  color: black;
   font-size: 65px;
   text-align: center;
   margin-bottom: 1vh;
@@ -170,7 +167,6 @@ table {
 
 #heroSection #hero #dynamicTextWrapper p {
   font-size: 40px;
-  text-align: center;
   display: inline;
 }
 
@@ -214,14 +210,12 @@ table {
   }
 }
 
-@media (min-width: 1024px) {
-  #heroSection #hero #brand {
-    margin-right: 15vw;
-  }
-}
-
 nav {
   z-index: 5;
+}
+
+nav #navWrapper #logo a img {
+  width: 200px;
 }
 
 nav #navWrapper #hamburger {
@@ -233,7 +227,8 @@ nav #navWrapper #hamburger span {
 }
 
 nav #navWrapper #navLinks a {
-  color: #707070;
+  color: black;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -258,7 +253,7 @@ nav #navWrapper #navLinks a {
     color: white;
     font-size: 30px;
     font-weight: bold;
-    z-index: 4;
+    z-index: -1;
   }
 
   nav #navWrapper #hamburger {
@@ -368,7 +363,7 @@ nav #navWrapper #navLinks a {
 
 @media (min-width: 1024px) {
   nav {
-    padding: 5vh;
+    padding: 3vh 0;
   }
 
   nav #navWrapper {
@@ -377,15 +372,12 @@ nav #navWrapper #navLinks a {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-  }
-
-  nav #navWrapper #logo {
-    font-size: 30px;
+    align-items: center;
   }
 
   nav #navWrapper #hamburger #navLinks a {
     margin-left: 30px;
-    font-size: 28px;
+    font-size: 24px;
   }
 
   nav #navWrapper #hamburger #navLinks a:hover {
@@ -413,13 +405,16 @@ nav #navWrapper #navLinks a {
 }
 
 #splash #ctaWrapper #ctaRight form #success {
-  color: white !important;
+  font-weight: 800;
+  color: black;
 }
 
 #splash #ctaWrapper #ctaRight form .errors .errorMsg {
+  margin-top: 1vh;
   font-size: 14px;
+  font-weight: 500;
   display: block;
-  color: red;
+  color: #ff0000;
 }
 
 #splash #ctaWrapper #ctaRight form label {

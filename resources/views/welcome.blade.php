@@ -4,10 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>LillyPad | Web Development</title>
+        <title>LillyPad Web Development</title>
 
         <script src="https://kit.fontawesome.com/888059e617.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="{{ url('css/app.css') }}" />
+        <head>
+  <link rel="shortcut icon" type="image/x-icon" href="{{asset('/images/icon.ico')}}" />
+</head>
         
     </head>
     <body>
@@ -15,7 +18,7 @@
         <nav id="nav">
             <div id="navWrapper">
                 <div id="logo">
-                    <p><a href="#">LillyPad</a></p>
+                    <a href="/"><img src="{{URL::asset('/images/svg/nav_logo_less_bold.svg')}}"></a>
                 </div>
                     <div id="hamburger">
                         <input id="menuToggle" type="checkbox">
@@ -34,7 +37,7 @@
         <section id="heroSection">
             <div id="hero">
                 <div id="brand">
-                    <h1>LillyPad</h1>
+                    <h1>Lilly Pad</h1>
                     <h2>Web Development</h2>
                 </div>
                 <div id="dynamicTextWrapper">
@@ -167,7 +170,7 @@
                 <br>
                 <p>(828)788-5961 </p>
                 <br>
-                <p>xxx@lillypadwebdev.com </p>               
+                <p> sales@lillypadwebdev.com </p>               
             </div>
         </footer>
 
@@ -178,7 +181,7 @@
         <script type="module" src="{{ asset('/js/type/src/type.js') }}"></script>
         <script src="{{ asset('/js/ddd.js') }}"></script>
         <script src="{{ asset('/js/cta.js') }}"></script>
-        <script src="{{ asset('/js/testing.js') }}"></script>
+        
     
     </body>
 </html>

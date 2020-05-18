@@ -6,14 +6,14 @@ $(document).ready(function() {
             "Websites",
             "E-commerce",
             "Lead Generation",
-            "Business Tools",
+            "Business Automation",
             "S.E.O.",
             "Consulting",
             "Design"
         ],
-        backDelay: 1200,
-        backSpeed: 80,
-        typeSpeed: 100,
+        backDelay: 1400,
+        backSpeed: 60,
+        typeSpeed: 80,
         loop: true,
         loopCount: Infinity
     };
