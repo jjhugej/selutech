@@ -17,8 +17,11 @@
 
         <nav id="nav">
             <div id="navWrapper">
-                <div id="logo">
-                    <a href="/"><img src="{{URL::asset('/images/nav_logo_less_bold.svg')}}"></a>
+                <div id="logoWrapper">
+                    <a href="#heroSection">
+                        <div id="logo"></div>
+                    </a>
+                    
                 </div>
                     <div id="hamburger">
                         <input id="menuToggle" type="checkbox">
@@ -27,8 +30,8 @@
                         <span></span>
                         <div id="navLinkWrapper">
                             <div id="navLinks">
-                                <a href="#services">Services</a>
-                                <a href="#contact">Contact</a>
+                                <a class="navLink" href="#services">Services</a>
+                                <a class="navLink" href="#contact">Contact</a>
                             </div>
                     </div>
                 </div>
@@ -53,7 +56,7 @@
         <section id="dddSection">
             <div class="container">
                 <div id="dddBtnGroup">
-                    <button id="designBtn" class="dddBtn" autofocus>Design</button>
+                    <button id="designBtn" class="dddBtn">Design</button>
                     <button id="developBtn" class="dddBtn">Develop</button>
                     <button id="deployBtn" class="dddBtn">Deploy</button>
                 </div>
@@ -63,7 +66,7 @@
                         <ul>
                             <li>Responsive web sites that fit any device</li>
                             <li>Sleek and intuitive user interfaces</li>
-                            <li>Completely custom designs with your brand in mind</li>
+                            <li>Completely custom designs with your brand in mind</li>  
                         </ul>
                     </div>
                      {{--
@@ -164,13 +167,20 @@
 
         <footer>
             <div id="footerWrapper">
-                <div id="footerBrand">
-                    <h4>LillyPad Web Development</h4>
+                <div id="footerLeft">
+                    <div id="footerBrand">
+                        <h4>LillyPad Web Development</h4>
+                    </div>
+                    <br>
+                    <p>(828)788-5961 </p>
+                    <br>
+                    <p> support@lillypadwebdev.com </p>               
                 </div>
-                <br>
-                <p>(828)788-5961 </p>
-                <br>
-                <p> support@lillypadwebdev.com </p>               
+                <div id="footerRight">
+                       <h4>68 Toot Hollow Circle</h4>
+                    <br>
+                    <p>Bryson City, NC 28713</p>
+                </div>
             </div>
         </footer>
 
@@ -181,7 +191,7 @@
         <script type="module" src="{{ asset('/js/type/src/type.js') }}"></script>
         <script src="{{ asset('/js/ddd.js') }}"></script>
         <script src="{{ asset('/js/cta.js') }}"></script>
-        
+        <script src="{{ asset('/js/navbar.js') }}"></script>        
     
     </body>
 </html>

@@ -7,15 +7,27 @@ footer {
     text-align: center;
 
     #footerWrapper {
-        font-size: 20px;
+        width: 100%;
+        font-size: 16px;
         font-weight: 600;
-        padding: 10vh 0;
-        #footerBrand {
+        padding: 5vh 2vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        #footerLeft {
             margin-bottom: 1vh;
-            h4 {
+            #footerBrand {
+                margin-bottom: 1vh;
+                h4 {
+                }
+            }
+            p {
+                margin-bottom: 1vh;
             }
         }
-        p {
+        #footerRight {
             margin-bottom: 1vh;
         }
     }

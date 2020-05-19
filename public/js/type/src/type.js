@@ -6,7 +6,7 @@ $(document).ready(function() {
             "Websites",
             "E-commerce",
             "Lead Generation",
-            "Business Automation",
+            "Automation",
             "S.E.O.",
             "Consulting",
             "Design"

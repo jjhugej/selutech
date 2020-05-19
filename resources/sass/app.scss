@@ -35,10 +35,11 @@
 
 @import "node_modules/bootstrap/scss/grid"; // --> just for grid, must have required plugins
 */
-
+* {
+    scroll-behavior: smooth;
+}
 body {
     font-family: $font-family-sans-serif;
-
     min-height: 200vh;
     color: $fontGrey100;
 }

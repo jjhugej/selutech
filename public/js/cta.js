@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    console.log("cta!");
     $("form").on("submit", function(e) {
         e.preventDefault();
 

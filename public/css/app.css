@@ -214,8 +214,34 @@ nav {
   z-index: 5;
 }
 
-nav #navWrapper #logo a img {
-  width: 200px;
+nav #navWrapper #logoWrapper {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  height: 40px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+nav #navWrapper #logoWrapper a {
+  height: 100%;
+  width: 100%;
+}
+
+nav #navWrapper #logoWrapper a #logo {
+  background-image: url("/images/nav_logo_less_bold.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
 }
 
 nav #navWrapper #hamburger {
@@ -249,11 +275,13 @@ nav #navWrapper #navLinks a {
     align-items: center;
   }
 
-  nav #navWrapper #logo {
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    z-index: -1;
+  nav #navWrapper #logoWrapper {
+    height: 60px;
+    width: 60px;
+  }
+
+  nav #navWrapper #logoWrapper a #logo {
+    background-image: url("/images/lillypad_solo.svg");
   }
 
   nav #navWrapper #hamburger {
@@ -273,7 +301,7 @@ nav #navWrapper #navLinks a {
   nav #navWrapper #hamburger #menuToggle {
     display: block;
     width: 70px;
-    height: 50px;
+    height: 70px;
     position: fixed;
     top: 1.5vh;
     right: 4.2vw;
@@ -285,8 +313,8 @@ nav #navWrapper #navLinks a {
   nav #navWrapper #hamburger span {
     display: block;
     margin-bottom: 5px;
-    width: 33px;
-    height: 5px;
+    width: 40px;
+    height: 7px;
     border-radius: 5px;
     background-color: #ffffff;
     z-index: 4;
@@ -354,7 +382,6 @@ nav #navWrapper #navLinks a {
     color: #ffffff;
     margin: 7vh 0;
     font-size: 30px;
-    font-weight: 500;
     padding-bottom: 5px;
     border-bottom: solid 2px #ffffff;
     border-radius: 3px;
@@ -986,16 +1013,30 @@ footer {
 }
 
 footer #footerWrapper {
-  font-size: 20px;
+  width: 100%;
+  font-size: 16px;
   font-weight: 600;
-  padding: 10vh 0;
+  padding: 5vh 2vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-footer #footerWrapper #footerBrand {
+footer #footerWrapper #footerLeft {
   margin-bottom: 1vh;
 }
 
-footer #footerWrapper p {
+footer #footerWrapper #footerLeft #footerBrand {
+  margin-bottom: 1vh;
+}
+
+footer #footerWrapper #footerLeft p {
+  margin-bottom: 1vh;
+}
+
+footer #footerWrapper #footerRight {
   margin-bottom: 1vh;
 }
 
@@ -1007,6 +1048,10 @@ footer #footerWrapper p {
 
 @import "node_modules/bootstrap/scss/grid"; // --> just for grid, must have required plugins
 */
+
+* {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Montserrat", sans-serif;
