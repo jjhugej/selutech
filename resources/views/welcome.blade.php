@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>LillyPad Web Development</title>
+        <meta name="description" content="The Premiere web development firm in western NC">
 
         <script src="https://kit.fontawesome.com/888059e617.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="{{ url('css/app.css') }}" />
