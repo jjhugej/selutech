@@ -7,7 +7,7 @@
         <title>LillyPad Web Development</title>
         <meta name="description" content="The Premiere web development firm in western NC">
 
-        <script src="https://kit.fontawesome.com/888059e617.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/5451ef5eac.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="{{ url('css/app.css') }}" />
         <head>
   <link rel="shortcut icon" type="image/x-icon" href="{{asset('/images/icon.ico')}}" />
