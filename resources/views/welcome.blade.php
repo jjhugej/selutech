@@ -178,8 +178,6 @@
                     <p> support@lillypadwebdev.com </p>               
                 </div>
                 <div id="footerRight">
-                       <h4>68 Toot Hollow Circle</h4>
-                    <br>
                     <p>Bryson City, NC 28713</p>
                 </div>
             </div>
